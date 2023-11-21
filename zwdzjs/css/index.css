@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+#game{
+    width: 1000px;
+    height: 600px;
+    background: url("../images/interface/background1.jpg");
+    margin: 300px auto;
+    position:relative;
+}
+#czbj {
+    background: url("../images/interface/ShovelBack.png");
+    width: 71px;
+    height:35px;
+}
+.boxCollider{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+}
+#xz{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    z-index: 3;
+}
+.zb{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    animation: 1s jsShow forwards;
+}
+#cz{
+    background: url("../images/interface/Shovel/0.gif");
+    width: 76px;
+    height: 34px;
+    cursor: pointer;
+}
+img{
+    position: absolute;
+    z-index: 1;
+}
+#canvas1{
+    position: relative;
+    z-index: 10;
+}
+#gjl{
+    width: 100px;
+    position: absolute;
+    left: 45px;
+    top: 30px;
+    z-index: 11;
+}
+#gjl li{
+    margin-top: 10px;
+}
+.zw{
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+}
+#zw1{
+    background: url("../images/Card/Plants/SunFlower.png");
+}
+#zw2{
+    background: url("../images/Card/Plants/Peashooter.png");
+}
+#zw3{
+    background: url("../images/Card/Plants/WallNut.png");
+}
+#yg{
+    background: url("../images/interface/SunBack.png");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 35px;
+}
+#ygNum{
+    display: block;
+    font-size: 17px;
+    margin-left: 35px;
+    line-height: 33px;
+    font-weight: bold;
+    width: 81px;
+    text-align: center;
+}
+.y{
+    z-index: 11;
+}
+.yg{
+    position: absolute;
+    animation: 2s ygShow;
+    cursor: pointer;
+}
+@keyframes ygShow {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.ygGo{
+    animation: 1s ygGo forwards;
+}
+@keyframes ygGo {
+    90%{
+       left: 20px;
+        top: 20px;
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+        left: 20px;
+        top: 20px;
+        transform: scale(0.5);
+    }
+}
+.ygDown{
+    position: absolute;
+    cursor: pointer;
+}
+.jzStyle{
+    background: url("../images/Plants/PeaBulletHit.gif");
+    width: 52px;
+    height: 46px;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 15px;
+    animation:1s jzXg forwards;
+    opacity: 0;
+    display: none;
+}
+@keyframes jzXg {
+    20%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes jsShow {
+    100%{
+        opacity: 1;
+    }
+}
